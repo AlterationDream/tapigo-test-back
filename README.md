@@ -22,11 +22,11 @@
 - Приложение будет доступно по адресу <i>localhost:8000</i>
 
 ### Доступные роуты
-- /api/login        - Вход по данным (multipart/form-data) [email, password]
-- /api/register     - Регистрация пользователя (multipart/form-data) [name, email, password, password_confirmation]
-- /api/logout       - Деактивация токена (auth: Bearer Token)
-- /api/refresh      - Обновление токена (auth: Bearer Token)
-- /api/current-user - Данные текущего пользователя (auth: Bearer Token)
-- /api/posts        - Список постов (auth: Bearer Token)
-- /api/posts/{id}   - Отдельный пост (auth: Bearer Token) [{id} - ID поста]
-- /api/own-posts    - Посты пользователя, выполнившего вход (auth: Bearer Token)
+- POST /api/login        - Вход по данным (multipart/form-data) [email, password]
+- POST /api/register     - Регистрация пользователя (multipart/form-data) [name, email, password, password_confirmation]
+- GET /api/logout        - Деактивация токена (auth: Bearer Token) (application/json)
+- GET /api/refresh       - Обновление токена (auth: Bearer Token) (application/json)
+- GET /api/current-user  - Данные текущего пользователя (auth: Bearer Token) (application/json)
+- GET /api/posts         - Список постов (auth: Bearer Token) (application/json)
+- GET /api/posts/{id}    - Отдельный пост (auth: Bearer Token) [{id} - ID поста] (application/json)
+- GET /api/own-posts     - Посты пользователя, выполнившего вход (auth: Bearer Token) (application/json)
